@@ -8,8 +8,8 @@
       <p class="pb-8">{{$store.state.counter}}</p>
     </div>
     
-
     <div class="btn-wrapper d-flex justify-center">
+      <!-- @clickでクリックしたら発火、incrementを呼び出してcommitする -->
       <v-btn 
         class="mx-5" 
         fab dark 
@@ -18,6 +18,7 @@
         <v-icon dark>mdi-plus</v-icon>
       </v-btn>
 
+      <!-- @clickでクリックしたら発火、decrementを呼び出してcommitする -->
       <v-btn 
         class="mx-5"
         fab dark
@@ -26,11 +27,29 @@
         <v-icon dark>mdi-minus</v-icon>
       </v-btn>
     </div>
-    
   </v-app>
 </template>
 
 <script>
+// import axios from "axios";
+
 export default {
+  //// APIとの通信
+  // data() {
+  //   return {
+  //     counter: [1,2,3,4]
+  //   };
+  // },
+  // methods: {
+  //   sendData() {
+  //     axios
+  //     .post(`http://localhost:8080/counter`, {
+  //       counter: this.counter
+  //     })
+  //     .then(response => {
+  //       console.log(response.data)
+  //     });
+  //   }
+  // }
 }
 </script>
