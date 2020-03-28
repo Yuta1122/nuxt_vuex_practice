@@ -29,27 +29,3 @@
     </div>
   </v-app>
 </template>
-
-<script>
-// import axios from "axios";
-
-export default {
-  //// APIとの通信
-  // data() {
-  //   return {
-  //     counter: [1,2,3,4]
-  //   };
-  // },
-  // methods: {
-  //   sendData() {
-  //     axios
-  //     .post(`http://localhost:8080/counter`, {
-  //       counter: this.counter
-  //     })
-  //     .then(response => {
-  //       console.log(response.data)
-  //     });
-  //   }
-  // }
-}
-</script>
