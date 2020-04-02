@@ -48,5 +48,9 @@
 
 <script>
 export default {
+  // question.vueが描画される前にfetchQuestionを発火させる。
+  async mounted() {
+    this.$store.dispatch("fetchQuestion");
+  }
 }
 </script>
