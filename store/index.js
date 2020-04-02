@@ -22,3 +22,13 @@ export const mutations = {
     state.answer=answer;
   }
 }
+
+export const action = {
+   // Railsと非同期通信を行い、question.ymlの中の質問と選択肢を取ってくる。
+    // そのあと、SET_QUESTIONをcommitし、storeの状態を変化させる。
+    async fetchQuestion(context) {
+      const url = 'http://localhost:8080/questions'
+      const result = await axios.get(url);
+      context.commit("SET_QUESTION", result.data)
+  }
+}
